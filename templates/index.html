@@ -79,7 +79,7 @@
     </form>
   
     <div class="result" id="result-section">
-      <h2></h2>
+      <h2 id="short-url"></h2>
     </div>
   </div>
 
@@ -97,10 +97,13 @@
           csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
         },
         success: function(data) {
-          $('#short-url').html(`<a class="short-url" href="${data}" target="_blank">${data}</a>`);
+          const baseUrl = 'http://localhost:8000/';
+          const shortUrl = baseUrl + data;
+          $('#short-url').html(`<a class="short-url" href="${shortUrl}" target="_blank">${shortUrl}</a>`);
           $('#link').val('');
         }
       });
     });
   </script>
+
 </html>
