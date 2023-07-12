@@ -14,7 +14,10 @@
       align-items: center;
       height: 100vh;
       font-family: "Lato", sans-serif;
-      background-color: #f2f2f2;
+      background-color: #e1ccb7;
+      position: relative;
+      min-height: 100vh;
+
     }
 
     .container {
@@ -23,6 +26,7 @@
       padding: 1rem;
       background-color: #fff;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
     }
 
     h1 {
@@ -41,6 +45,7 @@
       border: 1px solid #ccc;
       border-radius: 3px;
       font-size: 16px;
+      margin-bottom: 0.5rem;
     }
 
     button[type="submit"] {
@@ -67,6 +72,17 @@
       font-size: 16px;
       text-decoration: none;
     }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      background: #c9cfe8;
+      margin-top: auto;
+      width: 100vw;
+      margin-inline: 0px;
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
@@ -81,6 +97,9 @@
     <div class="result" id="result-section">
       <h2 id="short-url"></h2>
     </div>
+  </div>
+  <div class="footer">
+    <p>Made with ❤️ by Harshal</p>
   </div>
 
 </body>
